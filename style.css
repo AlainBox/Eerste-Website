@@ -1,0 +1,1525 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Algemeen */
+html{
+    background: #fff;
+    height: 100%;
+}
+
+body{
+    background: #fff;
+    height: 100vh;
+    width: 100vw;
+    margin: 0 auto;
+}
+
+a{
+    color: black;
+    transition: .2s;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover{
+    color: orange;
+    transition: .2s;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.container-grid{
+    width: 100%;
+    overflow: hidden;
+    margin-right: 0 auto;
+    margin-left: 0 auto;
+}
+
+header ul{
+    padding: 0;
+    margin: 0;
+}
+
+main{
+    min-height: 100%;
+}
+
+input:required {
+    box-shadow: none;
+}
+
+input{
+    -webkit-appearance: none;
+    border-radius: 0;
+}
+
+p{
+    font-family: 'Noto Serif JP', serif;
+    font-size: 12px;
+}
+
+img {
+    height: 100%;
+    max-width: 100%;
+}
+
+/*index.html*/
+/* top-banner */
+.banner-text{
+    color: #fff;
+    font-family: 'Noto Serif JP', serif;
+    font-size: 14px;
+    padding: 8px;
+    background: orange;
+    text-align: center;
+    min-height: 8px;
+    padding-left: 10px;
+
+}
+.close-button{
+	border: none;
+    background: transparent;
+    color: #fff;
+    font-family: 'Gruppo', cursive;
+    font-size: 20px;
+    float: right;
+}
+
+.close-button a:hover{
+    color: rgb(49, 49, 49);
+}
+
+.link-top-banner{
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Noto Serif JP', serif;
+    font-size: 14px;
+}
+
+.link-top-banner:hover{
+    color: rgb(49, 49, 49);
+}
+
+.link-top-banner:hover{
+    cursor: pointer;
+}
+
+/*header section*/
+header{
+    padding-bottom: 10px;
+    border-bottom: 1px lightgray solid;
+    margin: 0 auto;
+}
+
+.logo{
+    padding-left: 15px;
+    padding-top: 5px;
+    color: black;
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5rem;
+    float: left;
+}
+
+.logo:hover{
+    cursor: pointer;
+}
+
+nav a{
+    color: black;
+    font-family: 'Playfair Display', serif;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: inherit;
+}
+
+header li{
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 13px 10px 0 10px;
+}
+
+header nav{
+    float: right;
+    margin-top: 20px;
+    margin-right: 10px
+}
+
+header .nav-current a{
+    color: black;
+    font-weight: bold;
+    border-bottom: 2.5px orange solid;
+}
+
+.button-banner{
+    color: white;
+    transition: .2s;
+    text-decoration: none; 
+    cursor: pointer; 
+}
+
+/* Main section*/
+/*3 images 'splashpage'*/
+#image-grid-homepage{
+    background-color: rgb(49, 49, 49);
+}
+
+.three-images-grid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: .5rem;
+    padding-top: 40px;
+}
+
+.text-top-header{
+    font-size: 11px;
+    font-family: 'Playfair Display', serif;
+    float: right;
+    padding-right: 10px;
+    margin-top: 50px;
+    margin-bottom: -35px;
+}
+
+.text-top-header a{
+    text-decoration: none;
+    color: #fff;
+    transition: .5s;
+}
+
+.text-top-header a:hover{
+    transition: .5s;
+    margin-right: 5px;
+    color: orange;
+}
+
+.three-images-grid h2{
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    padding-top: 10px;
+}
+
+.three-images-grid #image-1{
+    opacity: 1;
+    transition: .6s;
+}
+
+.three-images-grid #image-1:hover{
+    opacity: .7;
+    transition: .6s;
+    cursor: pointer;
+}
+
+.three-images-grid #image-2{
+    opacity: 1;
+    transition: .6s;
+}
+
+.three-images-grid #image-2:hover{
+    opacity: .7;
+    transition: .6s;
+    cursor: pointer;
+}
+
+.three-images-grid #image-3{
+    opacity: 1;
+    transition: .6s;
+}
+
+.three-images-grid #image-3:hover{
+    opacity: .7;
+    transition: .6s;
+    cursor: pointer;
+}
+
+/*What's Popular?*/
+#recipe-index{
+    padding: .5rem 0;
+    padding-top: 0;
+    background: rgb(49, 49, 49);
+}
+
+.searchbar-index-recipes{
+    text-align: center;
+}
+
+.search-bar{
+    width: 100%;
+    height: 40px;
+    border: none;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.search-bar[placeholder]{
+    font-family: 'Noto Serif JP', serif;
+    font-size: 16px;
+    background: #fff;
+    color: black;
+    transition: .3s;
+}
+
+.search-bar[placeholder]:hover{
+    color: darkgrey;
+    transition: .3s;
+}
+
+.boxwrap{
+    text-align: center;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+.box {
+    padding: 40px 20px;
+    transition: .3s;
+    display: inline-block;
+    text-align: center;
+}
+
+.box i{
+    color: white;
+    font-size: 28px;
+}
+
+.box i:hover{
+    color: orange;
+    cursor: pointer;
+}
+
+.box h3{
+    font-family: 'Noto Serif JP', serif;
+    font-weight: inherit;
+    color: white;
+    font-size: 16px;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.box a{
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+}
+
+.box a:hover{
+    color: orange;
+}
+
+/* Recipes Showcase*/
+#showcase-photos{
+    margin-top: 40px;
+    margin-bottom: 20px;
+    height: auto;
+}
+
+.showcase-1, .showcase-2, .showcase-3{
+    display: flex;
+}
+
+.text-box{
+    padding: 5px 0;
+    margin-left: 20px;
+    width: 100%;
+    text-align: left;
+    height: auto;
+}
+
+.text-box h1{
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2rem;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.imgs-recipe-showcase{
+    padding-top: 5px;
+    padding-bottom: 10px;
+    opacity: 1;
+    transition: .3s;
+    max-width: 18%;
+}
+
+.imgs-recipe-showcase:hover, .imgs-recipe-showcase-2:hover{
+    opacity: .6;
+    cursor: pointer;
+    transition: .6s;
+}
+
+.box-link{
+    cursor: pointer;
+    font-family: 'Playfair Display', serif;
+}
+
+.box-link:hover{
+    color: black;
+    text-decoration: underline black;
+}
+
+.p-text-box{
+    font-size: 14px;
+    margin-bottom: 20px;
+    max-width: 100%;
+}
+
+.continue-reading a{
+    color: orange;
+    cursor: pointer;
+    transition: .3s;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem;
+}
+
+.continue-reading a:hover{
+    color: black;
+    margin-left: 3px;
+    transition: .3s;
+}
+
+/* Social & Newsletter*/
+#newsletter-section{
+    height: auto;
+    background: #fff;
+    display: flex;
+}
+
+#social-icons{
+    font-size: 14px;
+    background: #fff;
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 130px 0;
+    transition: .5s;
+}
+
+#social-icons:hover{
+    border: 1px solid orange;
+    transition: .3s;
+}
+
+#social-icons a{
+    color: black !important;
+    transition: .3s;
+}
+
+#social-icons a:hover{
+    color: orange !important;
+    transition: .3s;
+}
+
+.newsletter-heading{
+    font-family: 'Playfair Display', serif;
+    letter-spacing: .1em;
+    color: black;
+    margin-bottom: 30px;
+    margin-left: 5px;
+}
+
+.form-email{
+    padding: 30px 0;
+    float: right;
+    width: 50%;
+    background: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: .5s;
+}
+
+.form-email input{
+    width: 70%;
+    height: 40px;
+    margin: 0px 5px 10px 0px;
+    border: none;
+    background: #fff;
+}
+
+.form-email input[placeholder]{
+    padding-left: 18px;
+    font-family: 'Noto Serif JP', serif;
+    color: black;
+}
+
+#newsletter-section .button-1{
+    width: 20%;
+    height: 40px;
+    border: none;
+    color: #fff;
+    margin: 10px 0 30px 0px;
+    background-color: rgb(49, 49, 49);
+    font-family: 'Noto Serif JP', serif;
+    font-size: 18px;
+}
+
+#newsletter-section form .button-link{
+    color: #fff;
+    transition: .3s;
+}
+
+#newsletter-section form .button-1:hover{
+    cursor: pointer;
+    background: orange;
+    color: #fff;
+    transition: .3s;
+}
+
+/*About Me*/
+#about-me-david{
+    background: #fff
+}
+
+.about-me{
+    height: auto;
+    padding: 30px 0;
+    margin-top: 30px;
+}
+
+.about-me .about-me-images-1{
+    transition: .6s;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: .5rem;
+}
+
+.about-me img{
+    width: 100%;
+    flex: 25%;
+    transition: .6s;
+}
+
+.about-me img:hover{
+    opacity: .8;
+    transition: .6s;
+}
+
+.about-me .about-me-text{
+    margin: 50px 5px 30px 5px;
+    line-height: 1.3rem;
+    text-align: center;
+}
+
+.about-me .about-me-text h2{
+    font-family: 'Playfair Display', serif;
+    font-size: 23px;
+}
+
+.about-me .about-me-button{
+    border: none;
+    background: rgb(49, 49, 49);
+    height: 30px;
+    width: 120px;
+    font-size: 14px;
+    font-family: 'Noto Serif JP', serif;
+    margin: 0 auto;
+    padding-top: 3px;
+    text-transform: uppercase;
+    display: flex;
+}
+
+.about-me .about-me-button a{
+    color: #fff;
+    transition: .3s;
+    text-decoration: none;
+    margin: 0 auto;
+}
+
+.about-me .about-me-button:hover{
+    background: orange;
+    color: #fff;
+    transition: .3s;
+}
+
+/* about us.html*/
+/*Let's talk about us*/
+.about-me-text-2{
+    font-family: 'Noto Serif JP', serif;
+    font-size: 14px;
+    line-height: 1.3rem;
+    padding-top: 20px;
+    float: left;
+    width: 55%;
+    color: black;
+    transition: .4s;
+}
+
+.our-history{
+    font-family: 'Noto Serif JP', serif;
+    font-size: 14px;
+    line-height: 1.3rem;
+    margin-top: 20px;
+    margin-left: 80px;
+    float: left;
+    width: 35%;
+    background: rgb(49, 49, 49);
+    color: white;
+    padding: 25px;
+    text-align: center;
+    transition: .5s;
+}
+
+.our-history:hover{
+    background-color: orange;
+    color: #fff;
+    transition: .5s;
+}
+
+.our-history h1{
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+}
+
+.meet-the-team-content{
+    height: auto;
+    display: flex;
+    margin-bottom: 60px;
+}
+
+.meet-the-team-content .team-section{
+    flex: 1;
+    opacity: 1;
+    transition: .3s;
+    text-align: center;
+}
+
+.meet-the-team-content .team-section:hover{
+    opacity: .8;
+    transition: .4s;
+}
+
+.h1-meet-team{
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    margin-top: 40px;
+}
+
+.meet-the-team-content img{
+    max-width: 50%;
+    height: auto;
+    margin-top: 40px;
+    border-radius: 50%;
+}
+
+.meet-the-team-content img:hover{
+    border: 4px solid orange;
+    border-radius: 50%;
+}
+
+.text-anna{
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+.text-joshua{
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+.text-masie{
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+/* Recipes.html*/
+.banner-recipes{
+    height: auto;
+    padding-bottom: 4rem;
+    background: rgb(49, 49, 49);
+    color: white;
+}
+
+.banner-recipes h1{
+    padding-top: 30px;
+    font-family: 'Playfair Display', serif;
+    font-size: 70px;
+    text-align: center;
+}
+
+.banner-recipes p{
+    padding-top: 35px;
+    font-size: 14px;
+    font-family: 'Noto Serif JP', serif;
+    text-align: center;
+}
+
+.text-banner-recipes{
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+.searchbar-recipes{
+    width: 75%;
+    height: 50px;
+    margin: -28px auto;
+    border: solid 5px rgb(49, 49, 49);
+    display: flex;
+}
+
+.searchbar-recipes[placeholder]{
+    font-family: 'Noto Serif JP', serif;
+    padding-left: 20px;
+    padding-bottom: 1px;
+    font-size: 16px;
+    background: #fff;
+    color: black;
+    transition: .6s;
+}
+
+.searchbar-recipes[placeholder]:hover{
+    color: darkgrey;
+    transition: .6s;
+}
+
+.header-recipe-cards{
+    font-size: 20px;
+    border-bottom: 1px solid black;
+    width: 75%;
+    margin: 100px auto;
+    margin-bottom: 0;
+}
+
+.recipe-cards{
+    width: 75%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-bottom: 80px;
+}
+
+.card{
+    max-width: 100%;
+    display: block;
+    color: black;
+    
+    margin-top: 20px;
+}
+
+.card-content h2{
+    margin-top: 5px;
+    padding-left: 5px;
+    transition: .3s;
+    font-size: 22px;
+}
+
+.card-content h2:hover{
+    text-decoration: underline 1px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.card-content p{
+    margin-top: 5px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    padding-left: 5px;
+    max-width: 99%;
+}
+
+.card-info{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px;
+    background-color: #f2f2f2;
+    border-bottom: 2px solid darkgray;
+}
+
+.card-info a{
+    color: orange;
+    font-family: 'Noto Serif JP', serif;
+    font-size: 0.9em;
+    transition: .3s;
+}
+
+.card-info a:hover{
+    color: black;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.card-info i{
+    transition: .3s;
+}
+
+.card-info i:hover{
+    color: red;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.like-number-recipe-grid{
+    font-family: 'Noto Serif JP', serif;
+    font-size: 0.9em;
+}
+
+.popular-categories{
+    margin-top: 40px;
+    padding-bottom: 4rem;
+    width: 75%;
+    margin: 0 auto;
+}
+
+.popular-categories h1{
+    font-size: 30px;
+    border-bottom: 1px solid black;
+    margin-bottom: 0;
+}
+
+.ul-popular-categories-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    list-style: none;
+    margin-top: 25px;
+    line-height: 35px;
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+}
+
+.popular-categories .container-grid li:hover{
+    color: orange;
+    cursor: pointer;
+}
+
+/* contact us.html*/
+.contact{
+    height: auto;
+    padding-bottom: 4rem;
+}
+
+.banner-contact{
+    height: auto;
+    padding-bottom: 5.4rem;
+    max-width: 100%;
+    background: rgb(49, 49, 49);
+    color: white;
+}
+
+.banner-contact h1{
+    padding-top: 30px;
+    font-family: 'Playfair Display', serif;
+    font-size: 70px;
+    text-align: center;
+}
+
+.banner-contact p{
+    padding-top: 35px;
+    font-size: 14px;
+    font-family: 'Noto Serif JP', serif;
+    text-align: center;
+}
+
+.text-banner-contact{
+    max-width: 50%;
+    margin: auto;
+}
+
+.contact-content{
+    margin: 0 auto;
+    margin-top: -50px;
+    width: 80%;
+}
+
+.contact-content-left, .contact-content-right{
+    flex: 1;
+}
+
+.contact-content-left{
+    height: 600px;
+    background: #f2f2f2;
+    border: 5px orange solid;
+}
+
+.contact-content-left label{
+    margin-top: 20px;
+    margin-left: 50px;
+    display: block;
+    font-family: 'Playfair Display', serif;
+}
+
+.contact-content-left input[name="fname"]{
+    height: 40px;
+    width: 50%;
+    margin: 5px 0 10px 50px;
+    padding-left: 15px;
+    box-sizing: border-box;
+    border: none;
+    color: black;
+    font-family: 'Noto Serif JP', serif;
+    font-size: 14px;
+
+}
+
+.contact-content-left input[name="lname"]{
+    height: 40px;
+    width: 50%;
+    margin: 5px 0 10px 50px;
+    padding-left: 15px;
+    box-sizing: border-box;
+    border: none;
+    color: black;
+    font-family: 'Noto Serif JP', serif;
+    font-size: 14px;
+}
+
+.input-group-email{
+    width: 80%;
+}
+
+.contact-content-left input[name="email"]{
+    height: 40px;
+    width: 88%;
+    margin: 5px 0 10px 50px;
+    padding-left: 15px;
+    border: none;
+    color: black;
+    font-family: 'Noto Serif JP', serif;
+    font-size: 14px;
+}
+
+.input-group-subject{
+    width: 80%;
+}
+
+.contact-content-left select[name="subject"]{
+    height: 40px;
+    width: 88%;
+    margin: 5px 0 10px 50px;
+    padding-left: 15px;
+    border: none;
+    color: black;
+    background: #fff;
+    font-family: 'Noto Serif JP', serif;
+    font-size: 14px;
+}
+
+.contact-content-left textarea[name="message"]{
+    height: 80px;
+    width: 70%;
+    margin: 5px 0 10px 50px;
+    padding-left: 15px;
+    padding-top: 8px;
+    border: none;
+    color: black;
+    font-family: 'Noto Serif JP', serif;
+    font-size: 14px;
+}
+
+.submit-contact-form{
+    height: 40px;
+    width: 20%;
+    margin: 5px 0 5px 50px;
+    float: left;
+    border: none;
+    text-align: center;
+    background: rgb(49, 49, 49);
+    color: white;
+    font-family: 'Noto Serif JP', serif;
+    font-size: 16px;
+    padding-bottom: 2px;
+    transition: .3s;
+}
+
+.submit-contact-form:hover{
+    background: orange;
+    transition: .3s;
+}
+
+/* footer */
+.footer{
+    background: #f2f2f2;
+    position: relative;
+    border-top: 1px lightgray solid;
+}   
+
+.footer .footer-content{
+    display: flex;
+}
+
+.footer-about,
+.footer-links,
+.footer-contact{
+    flex: 1;
+}
+
+.footer .footer-bottom{
+    height: 50px;
+    width: 100%;
+    padding: 10px 0 50px 0;
+    background: rgb(49, 49, 49);
+    text-align: center;
+    position: absolute;
+    color: #fff;
+}
+
+/*About*/
+.footer-about{
+    background: #f2f2f2;
+}
+
+.logo-footer{
+    color: black;
+    font-family: 'Playfair Display', serif;
+    padding: 20px 0 0 80px;
+    font-size: 2.8rem;
+}
+
+.footer-about a{
+    text-decoration: none !important;
+}
+
+.logo-footer:hover{
+    cursor: pointer;
+}
+
+.footer-about p{
+    margin: 10px 0 10px 80px;
+    width: 70%;
+    line-height: 20px;
+    font-family: 'Outfit', sans-serif;
+}
+
+#social-icons-2{
+    margin: 0 15px 0 70px;
+}
+
+#social-icons-2 i{
+    margin-top: 5px;
+    margin-left: 10px;
+    padding: 4px 0 34px 0;
+    border: 1px solid black;
+    width: 40px;
+    height: 35px;
+    font-size: 30px;
+    text-align: center;
+    border-radius: 10%;
+    transition: .5s;
+}
+
+#social-icons-2 i:hover{
+    color: orange;
+    border: 1px solid orange;
+    transition: .5s;
+}
+
+/*Links*/
+.footer-links{
+    background: #f2f2f2;
+    padding-top: 30px;
+    padding-left: 35px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+}
+
+.h2-footer{
+    font-family: 'Playfair Display', serif;
+}
+
+.footer-links #left ul{
+    list-style: none;
+    margin-top: 20px;
+    line-height: 20px;
+    font-family: 'Playfair Display', serif;
+}
+
+.footer .footer-content .footer-section.links #left ul li{
+    transition: .3s;
+}
+
+.footer-links #left ul li:hover{
+    color: black;
+    margin-left: 5px;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.footer-links #center ul{
+    list-style: none;
+    margin-top: 20px;
+    line-height: 20px;
+    font-family: 'Playfair Display', serif;
+}
+
+.footer .footer-content .footer-section.links #center ul li{
+    transition: .3s;
+}
+
+.footer-links #center ul li:hover{
+    color: black;
+    margin-left: 5px;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.footer-links #right ul{
+    list-style: none;
+    margin-top: 20px;
+    line-height: 20px;
+    font-family: 'Playfair Display', serif;
+    transition: .3s;
+}
+
+.footer-links #right ul li{
+    transition: .3s;
+}
+
+.footer-links #right ul li:hover{
+    color: black;
+    margin-left: 5px;
+    transition: .3s;
+    cursor: pointer;
+}
+
+/* Contact*/
+.footer-contact{
+    background: #f2f2f2;
+}
+.h2-footer-2{
+    padding: 23px 0px 0px 50px;
+    margin: 10px;
+}
+
+.contact-name{
+    width: 300px;
+    height: 40px;
+    margin: 0px 0px 10px 58px;
+    padding-left: 30px;
+    border: none;
+    background: #fff;
+    color: black;
+}
+
+.contact-name[placeholder]{
+    font-family: 'Noto Serif JP', serif;
+    padding-left: 10px;
+}
+
+.contact-email{
+    width: 300px;
+    height: 40px;
+    margin: 0px 20px 10px 58px;
+    padding-left: 30px;
+    border: none;
+    background: #fff;
+    color: black;
+}
+
+.contact-email[placeholder]{
+    font-family: 'Noto Serif JP', serif;
+    padding-left: 10px;
+}
+
+.contact-textarea{
+    width: 300px;
+    height: 70px;
+    margin: 0px 20px 20px 58px;
+    padding-top: 10px;
+    border: none;
+    background: #fff;
+    color: black;
+}
+
+.contact-textarea[placeholder]{
+    font-family: 'Noto Serif JP', serif;
+    padding-left: 10px;
+    font-size: 14px;
+}
+
+.contact-button{
+    height: 35px;
+    width: 20%;
+    margin: -10px 60px 10px 57px;
+    float: left;
+    border: none;
+    text-align: center;
+    background: rgb(49, 49, 49);
+    font-family: 'Noto Serif JP', serif;
+    font-size: 16px;
+    padding-bottom: 2px;
+    transition: .3s;
+}
+
+.contact-button a{
+    color: white;
+    text-decoration: none;
+}
+
+.contact-button:hover{
+    color: white;
+    background: orange;
+    font-size: 16.8px;
+    transition: .3s;
+}
+
+/* Mediaqueries */
+@media screen and (max-width:1264px){
+.footer-contact{
+    display: none;
+}
+
+.footer .footer-content{
+    justify-self: center;
+}
+}
+
+@media screen and (max-width:1083px){
+/* Algemeen */
+.container{
+    width: 90%;
+}
+
+/* Image Grid */
+.three-images-grid{
+    grid-gap: .5rem;
+}
+
+/* Showcase Recipes */
+.text-box h1{
+    padding: 0px 0;
+    font-size: 1.8rem;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.p-text-box{
+    font-size: 14px;
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+/* Social & Newsletter */
+.form-email h1{
+    font-size: 1.2rem;
+}
+
+#social-icons{
+    width: 100%;
+}
+
+.form-email{
+    width: 100%;
+}
+
+.form-email input{
+    width: 100%;
+}
+
+/*About.html*/
+/*Let's talk about us*/
+.our-history,
+.about-me-text-2{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.our-history{
+    margin-left: 0;
+}
+
+.our-history h1{
+    margin-bottom: 20px;
+}
+
+/*Recipes.html*/
+.recipe-cards{
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/*Footer*/
+
+}
+
+@media screen and (max-width:768px){
+/* Algemeen */
+.container{
+    width: 95%;
+}
+
+img {
+    height: auto;
+}
+
+
+/* Header */
+header nav{
+    float: none;
+    margin: 0 auto;
+    text-align: center;
+}
+
+header li{
+    padding: 10px 10px 10px 0;
+}
+
+.logo{
+    float: none;
+    padding-left: 0;
+    text-align: center;
+}
+
+.banner-text{
+    font-size: 12px;
+}
+
+.close-button{
+    font-size: 18px;
+}
+
+.link-top-banner{
+    font-size: 12px;
+}
+
+/* Image Grid */
+.three-images-grid{
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/* Recipe Index */
+.recipe-cards{
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/* Showcase Recipes */
+.showcase-1, .showcase-2, .showcase-3{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.text-box{
+    padding: 10px 0;
+    margin-left: 0px;
+}
+
+.p-text-box{
+    padding: 10px 0;
+}
+
+.text-box h1{
+    padding: 0 0;
+}
+
+.imgs-recipe-showcase{
+    padding: 0;
+}
+
+.imgs-recipe-showcase-2{
+    padding: 0;
+}
+
+.continue-reading{
+    margin-bottom: 15px;
+    font-size: 1rem;
+}
+
+.imgs-recipe-showcase{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* About us.html*/
+/*Let's talk about us*/
+.text-anna{
+    font-size: 15px;
+    padding-top: 5px;    
+}
+
+.text-joshua{
+    font-size: 15px;
+    padding-top: 5px;    
+}
+
+.text-masie{
+    font-size: 15px;
+    padding-top: 5px;    
+}
+
+/*Footer*/
+.footer .footer-content{
+    flex-direction: column;
+    padding: 1rem 0;
+}
+
+.footer-about,
+.footer-links,
+.footer-contact{
+    margin-bottom: 50px;
+}
+
+.footer-links{
+    padding-left: 80px;
+}
+
+
+
+}
+@media screen and (max-width:600px) {
+/*Recipes.html*/
+.ul-popular-categories-grid{
+    grid-template-columns: repeat(2,1fr);
+}
+
+/* Footer */
+.footer-links{
+    padding-left: 60;
+}
+}
+
+@media screen and (max-width:500px) {
+/*index.html*/
+/*banner-top*/
+.banner-text{
+    font-size: 10px;
+}
+
+.close-button{
+    font-size: 15px;
+}
+
+/* Image Grid */
+.three-images-grid{
+    grid-template-columns: repeat(1, 1fr);
+}
+
+/* About us.html*/
+.meet-the-team-content{
+    flex-direction: column;
+}
+
+.text-anna{
+    margin-bottom: 20px;
+}
+
+.text-joshua{
+    margin-bottom: 20px;
+}
+
+.text-masie{
+    margin-bottom: 20px;
+
+}
+
+/*Recipes.html*/
+.banner-recipes h1{
+    font-size: 50px;
+}
+
+.banner-recipes p{
+    font-size: 12px;
+
+}
+
+.recipe-cards{
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.ul-popular-categories-grid{
+    grid-template-columns: repeat(1,1fr);
+}
+
+/* contact us.html*/
+/* Contact */
+.banner-contact h1{
+    font-size: 50px;
+}
+
+.banner-content p{
+    font-size: 12px;
+}
+
+.submit-contact-form{
+    font-size: 14px;
+}
+
+/* Footer */
+.logo-footer{
+    padding-left: 20px;
+}
+
+.footer-about p{
+    margin-left: 20px;
+}
+
+#social-icons-2{
+    margin-left: 10px;
+}
+
+.footer-links{
+    background: #f2f2f2;
+    padding-top: 30px;
+    padding-left: 20px;
+    font-size: .9em;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+#center{
+    padding-left: 10px;
+}
+}
+
+
+@media screen and (max-width:400px) {
+/* Top Banner */
+.banner-text{
+    font-size: 10px;
+}
+
+.close-button{
+    font: 18px;
+}
+
+/* Header */
+nav a{
+    font-size: 16px;
+}
+
+/* Image Grid */
+.text-top-header{
+    font-size: 10px;
+}
+
+/* Recipes Showcase */
+.p-text-box{
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+/* Contact us.html */
+.submit-contact-form{
+    font-size: 12px;
+}
+
+
+/* Footer */
+.footer-links{
+    background: #f2f2f2;
+    padding-top: 30px;
+    padding-left: 20px;
+    font-size: .9em;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+#center{
+    padding-left: 10px;
+}
+
+}
